@@ -3,13 +3,13 @@ package dio.budgeting.infrastructure.persistence.entity;
 import dio.budgeting.domain.Category;
 import dio.budgeting.domain.Transaction;
 import dio.budgeting.domain.TransactionId;
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
+
 
 import java.util.UUID;
 
@@ -18,7 +18,15 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TransactionEntity {
+    /*
+    Alteração das Annotations
+    Antes o ID das transações aparecia como BLOB no MySQL,
+    após a adição do JdbcTypeCode o ID passou a ser
+    gerado corretamente.
+     */
     @Id
+    @JdbcTypeCode(SqlTypes.VARCHAR)
+    @Column(length = 36)
     private UUID id;
     private String description;
     private long amount;

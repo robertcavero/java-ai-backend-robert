@@ -1,0 +1,39 @@
+[
+	{
+		"amount" : 12000,
+		"id" : "3fde5d4c-8e5f-4ac0-96bb-27ba80369af5",
+		"description" : "Entrega de comida",
+		"category" : "RESTAURANTS"
+	},
+	{
+		"amount" : 6000,
+		"id" : "ac86d10f-4cd9-411a-aa83-edabc9e745ff",
+		"description" : "Estacionamento",
+		"category" : "AUTO"
+	},
+
+	{
+		"amount" : 4000,
+		"id" : "bc94391d-bbe7-4a86-bdcb-738b9bfecd6e",
+		"description" : "Compra de pão na padaria",
+		"category" : "GROCERIES"
+	},
+	{
+		"amount" : 8000,
+		"id" : ?,
+		"description" : "Compra de três itens na farmácia",
+		"category" : "PHARMA"
+	},
+	{
+		"amount" : 20000,
+		"id" : ?,
+		"description" : "Jantar",
+		"category" : "RESTAURANTS"
+	},
+	{
+		"amount" : 9000,
+		"id" : ?,
+		"description" : "combo de pipoca no cinema",
+		"category" : "ENTERTAINMENT"
+	}
+]
